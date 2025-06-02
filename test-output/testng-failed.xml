@@ -5,8 +5,7 @@
     <classes>
       <class name="First.HttpRequest">
         <methods>
-          <include name="updateData"/>
-          <include name="createUser"/>
+          <include name="patchRequest"/>
         </methods>
       </class> <!-- First.HttpRequest -->
     </classes>

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Varsha Narayan\AppData\Local\Temp\testng-eclipse--1763400204\testng-customsuite.xml</span>
+                    <span>C:\Users\Varsha Narayan\AppData\Local\Temp\testng-eclipse-1437864569\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="First.HttpRequest" class="method navigator-link" hash-for-method="createUser">createUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="First.HttpRequest" class="method navigator-link" hash-for-method="deleteData">deleteData</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="First.HttpRequest" class="method navigator-link" hash-for-method="jsonArrayPost">jsonArrayPost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,16 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createUser">
-                  </a> <!-- createUser -->
-                  <span class="method-name">createUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteData">
-                  </a> <!-- deleteData -->
-                  <span class="method-name">deleteData</span>
+                  <a name="jsonArrayPost">
+                  </a> <!-- jsonArrayPost -->
+                  <span class="method-name">jsonArrayPost</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -148,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Varsha Narayan\AppData\Local\Temp\testng-eclipse--1763400204\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Varsha Narayan\AppData\Local\Temp\testng-eclipse-1437864569\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,8 +147,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;First.HttpRequest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;createUser&quot;/&gt;
-          &lt;include name=&quot;deleteData&quot;/&gt;
+          &lt;include name=&quot;jsonArrayPost&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- First.HttpRequest --&gt;
     &lt;/classes&gt;
@@ -202,20 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createUser')
+data.setCell(0, 1, 'jsonArrayPost')
 data.setCell(0, 2, 'First.HttpRequest')
-data.setCell(0, 3, 2932);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteData')
-data.setCell(1, 2, 'First.HttpRequest')
-data.setCell(1, 3, 523);
+data.setCell(0, 3, 1874);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -230,15 +213,29 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">First.HttpRequest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteData</span>
+                <br/>
+                <span class="ignored-method-name">deleteUser2</span>
+                <br/>
+                <span class="ignored-method-name">postJsonObj</span>
+                <br/>
                 <span class="ignored-method-name">updateData</span>
                 <br/>
                 <span class="ignored-method-name">getUser</span>
+                <br/>
+                <span class="ignored-method-name">updateUser2</span>
+                <br/>
+                <span class="ignored-method-name">createUser2</span>
+                <br/>
+                <span class="ignored-method-name">patchRequest</span>
+                <br/>
+                <span class="ignored-method-name">createUser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -252,12 +249,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">First.HttpRequest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">createUser</span>
+                <span class="method-name">jsonArrayPost</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">deleteData</span>
-                <span class="method-start">2941 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
