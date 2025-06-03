@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="First.HttpRequest">
+      <class name="First.hamcrestAssertions">
         <methods>
-          <include name="patchRequest"/>
+          <include name="stringAssertions"/>
         </methods>
-      </class> <!-- First.HttpRequest -->
+      </class> <!-- First.hamcrestAssertions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
