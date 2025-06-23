@@ -41,28 +41,61 @@ public class hamcrestAssertions {
     public void stringAssertions() {
         given().contentType(ContentType.JSON)
                 .when().get(endpoint)
-                .then().body("firstname",equalTo("new_name"));
+                .then().body("firstname",equalTo("Mary"));
  
         given().contentType(ContentType.JSON)
                 .when().get(endpoint)
-                .then().body("firstname",equalToIgnoringCase("NEW_name"));
+                .then().body("firstname",equalToIgnoringCase("mary"));
  
         given().contentType(ContentType.JSON)
                 .when().get(endpoint)
-                .then().body("firstname",containsString("new"));
+                .then().body("firstname",containsString("James"));
  
         given().contentType(ContentType.JSON)
                 .when().get(endpoint)
-                .then().body("firstname",startsWith("n"));
+                .then().body("firstname",startsWith("J"));
  
         given().contentType(ContentType.JSON)
                 .when().get(endpoint)
-                .then().body("firstname",endsWith("e"));
+                .then().body("firstname",endsWith("s"));
  
         given().contentType(ContentType.JSON)
                 .when().get(endpoint)
-                .then().body("firstname",equalToCompressingWhiteSpace("   new_name "));
+                .then().body("firstname",equalToCompressingWhiteSpace("   James "));
  
  
+    }
+    
+    @Test
+    public void nullAssertion() {
+        given().contentType(ContentType.JSON)
+                .when().get(endpoint)
+                .then().body("totalprice1", is(nullValue()));
+    }
+    
+    @Test
+    public void collectionAssertions() {
+ 
+        given().contentType(ContentType.JSON)
+                .when().get(endpoint)
+                .then().body("bookingdates",hasKey("checkin"));
+ 
+    }
+    
+    @Test
+    public void negativeAssertions() {
+        given().contentType(ContentType.JSON)
+                .when().get(endpoint)
+                .then().body("totalprice",not(equalTo(874)));
+ 
+    }
+    
+    @Test
+    public void test1() {
+        given().contentType(ContentType.JSON)
+                .when().get(endpoint).then()
+                .body("firstname", equalTo("Jim"), // will fail
+                        "lastname", equalTo("Smith"), // will fail
+                        "totalprice", equalTo(314)); // will fail
     }
 }
