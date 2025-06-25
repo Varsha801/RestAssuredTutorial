@@ -1,0 +1,80 @@
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-api-key=reqres-free-v1
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+C:\Users\Varsha Narayan\RestAssured\RestAssuredTutorial\src\test\resources\jsonTest.json
+HTTP/1.1 201 Created
+Date: Wed, 25 Jun 2025 09:33:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 82
+Connection: keep-alive
+CF-RAY: 955376ca2cc87f4a-MAA
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1750844013&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=tCrC%2B7ThFF1WqJZuCIReUaaR60fEiL9eM71s%2FoPGIhU%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750844013&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=tCrC%2B7ThFF1WqJZuCIReUaaR60fEiL9eM71s%2FoPGIhU%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Ratelimit-Policy: 100;w=60
+Ratelimit-Limit: 100
+Ratelimit-Remaining: 98
+Ratelimit-Reset: 60
+Etag: W/"52-GhbfhkbM5Syy9BrVLYcorDl+SXs"
+Via: 1.1 vegur
+cf-cache-status: DYNAMIC
+Server: cloudflare
+server-timing: cfL4;desc="?proto=TCP&rtt=25451&min_rtt=25101&rtt_var=10113&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3105&recv_bytes=892&delivery_rate=156972&cwnd=238&unsent_bytes=0&cid=9975f901340b1109&ts=513&x=0"
+
+{
+    "name": "JsonPath",
+    "job": "test",
+    "id": "132",
+    "createdAt": "2025-06-25T09:33:33.439Z"
+}
+Request method:	POST
+Request URI:	https://www.dataaccess.com/webservicesserver/NumberConversion.wso
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=text/xml; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+C:\Users\Varsha Narayan\RestAssured\RestAssuredTutorial\src\test\resources\xmlFile.xml
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Server
+Web-Service: DataFlex 19.1
+X-Powered-By: ASP.NET
+Access-Control-Allow-Origin: *
+Referrer-Policy: strict-origin-when-cross-origin
+X-Robots-Tag: noai, noimageai
+tdm-reservation: 1
+Content-Security-Policy: default-src * data: 'unsafe-inline' 'unsafe-eval'; form-action 'self'; frame-ancestors 'self';
+Strict-Transport-Security: max-age=15768000;includeSubdomains
+X-Content-Type-Options: nosniff
+Permissions-Policy: interest-cohort=(); fullscreen=(self)
+Date: Wed, 25 Jun 2025 09:33:35 GMT
+Content-Length: 313
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <m:NumberToWordsResponse xmlns:m="http://www.dataaccess.com/webservicesserver/">
+      <m:NumberToWordsResult>five hundred </m:NumberToWordsResult>
+    </m:NumberToWordsResponse>
+  </soap:Body>
+</soap:Envelope>

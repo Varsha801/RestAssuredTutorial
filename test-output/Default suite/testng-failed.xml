@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="First.hamcrestAssertions">
+      <class name="First.passJsonAsPayload">
         <methods>
-          <include name="stringAssertions"/>
+          <include name="createUser"/>
         </methods>
-      </class> <!-- First.hamcrestAssertions -->
+      </class> <!-- First.passJsonAsPayload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
