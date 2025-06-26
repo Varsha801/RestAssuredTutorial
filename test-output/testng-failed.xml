@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="First.passJsonAsPayload">
+      <class name="First.ResponseTime">
         <methods>
-          <include name="createUser"/>
+          <include name="verifyResponseTimeRange"/>
         </methods>
-      </class> <!-- First.passJsonAsPayload -->
+      </class> <!-- First.ResponseTime -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
