@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="First.ResponseTime">
+      <class name="First.JsonCompare">
         <methods>
-          <include name="verifyResponseTimeRange"/>
+          <include name="verifyGreaterResponseTime"/>
         </methods>
-      </class> <!-- First.ResponseTime -->
+      </class> <!-- First.JsonCompare -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
