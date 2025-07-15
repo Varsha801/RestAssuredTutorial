@@ -11,6 +11,7 @@ public class TokenGeneration {
     private static Instant tokenExpiryTime;
     static Response response;
     static int expiresIn;
+    private static final long TOKEN_EXPIRY_BUFFER_SECONDS = 60;
  
     // Method to obtain initial token
     public static String getAccessToken() {
@@ -22,7 +23,7 @@ public class TokenGeneration {
  
     // Method to check if the token is expired
     private static boolean isTokenExpired() {
-        return tokenExpiryTime == null || Instant.now().isAfter(tokenExpiryTime);
+        return tokenExpiryTime == null || Instant.now().isAfter(tokenExpiryTime.minusSeconds(TOKEN_EXPIRY_BUFFER_SECONDS));
     }
  
     // Method to refresh token
