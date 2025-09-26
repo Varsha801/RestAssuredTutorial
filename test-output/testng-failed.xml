@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Json_Manipulation.JsonFileComparison">
+      <class name="First.ContentType_Demo">
         <methods>
-          <include name="compareResponse"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- Json_Manipulation.JsonFileComparison -->
+      </class> <!-- First.ContentType_Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

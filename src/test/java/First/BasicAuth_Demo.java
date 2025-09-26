@@ -9,12 +9,19 @@ import org.testng.annotations.Test;
 import io.restassured.http.ContentType;
 public class BasicAuth_Demo {
 	
+	private String validRequest = "{" +
+	           "\"username\": \"Samu01\"," +
+	           "\"email\": \"samuel@email.com\"," +
+	           "\"password\": \"Passw0rd123!\"" +
+	           "}";
+	
+	
 	@Test
     public void validateCredentials() {
  
         Response response = given()
                 .auth()
-                .preemptive()
+                //.preemptive()
                 .basic("user", "pass")
                 .header("Accept", "application/json")
                 .contentType(ContentType.JSON)
@@ -28,6 +35,27 @@ public class BasicAuth_Demo {
         int statusCode = response.getStatusCode();
  
         Assert.assertEquals(200,statusCode);
+    }
+	
+	//Just an example will not work 
+	@Test
+    public void createUser() {
+        Response response = given()
+                .auth()
+                .preemptive()
+                .basic("username", "password")
+                .header("Accept", "application/json")
+                .contentType(ContentType.JSON)
+                .body(validRequest)
+                .when()
+                .post("http://localhost:8080/users")
+                .then()
+                .extract()
+                .response();
+ 
+        int statusCode = response.getStatusCode();
+ 
+        Assert.assertEquals(statusCode,200);
     }
 
 }

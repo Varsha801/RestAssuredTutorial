@@ -15,7 +15,7 @@ public class JsonCompare {
  
                 // When
                 .when()
-                .get("https://reqres.in/api/users/3")
+                .get("https://reqres.in/api/users/2")
  
                 // Then
                 .then()
